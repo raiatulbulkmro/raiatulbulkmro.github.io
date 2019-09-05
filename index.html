@@ -22,7 +22,7 @@
             });
         </script>
     </head>
-    <body style="margin-left:270; margin-right:270; margin-top:90; margin-bottom: 90;">
+    <body style="margin-bottom: 10%;">
         <style>
             /*custom font for text*/
             @import url(http://fonts.googleapis.com/css?family=Nunito);
@@ -96,12 +96,15 @@
                 background: #28a745;
                 color: white;
             }
+            .form-control{
+                border-color: #28a745;
+            }
             .form-control:focus {
                 border-color: #28a745;
-                box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+                box-shadow: 0 0 0 0 #28a745;
             }
             
-            .fsize-big{
+            /*.fsize-big{
                 font-size:21px;
             }
             .fsize-medium{
@@ -109,6 +112,30 @@
             }
             .fsize-small{
                 font-size:15px;
+            }*/
+            .text-black-50 {
+                color: rgba(0,0,0,.5)!important;
+            }
+            .text-uppercase {
+                text-transform: uppercase!important;
+            }
+            .mb-1, .my-1 {
+                margin-bottom: .375rem!important;
+            }
+            h6{
+                font-size: .90rem;
+                margin-bottom: .75rem;
+                font-family: inherit;
+                font-weight: 500;
+                line-height: 1.2;
+                color: rgba(0,0,0,.5);
+            }
+            .form-group label {
+                color: #6c757d;
+                font-size: .875rem;
+                margin-bottom: .25rem;
+                font-weight: 700;
+                opacity: .9;
             }
         </style>
         <div id="vertical-menu" class="hidedd">
@@ -132,6 +159,7 @@
                 <!-- we will keep this LI open by default -->
             </ul>
         </div>
+        <div class="container">
         <nav aria-label="breadcrumb" class="navshow">
                 <ol class="breadcrumb appnlist" style="background-color: white">
                     <li class="breadcrumb-item"><a href="first_page.html" style="color:orange;">Home</a></li>
@@ -155,7 +183,7 @@
                                                 </select>
                                         </div>
                                     </div><br>
-                                    <h5 class="fsize-medium"><b>Billing/Shipping Details</b></h5>
+                                    <h6 class="text-uppercase text-black-50 mb-1" class="fsize-medium"><b>Billing/Shipping Details</b></h6 class="text-uppercase text-black-50 mb-1">
                                     <div class="row fsize-small">
                                         <div class="col form-group">
                                             <label for="inputState">Bill From*</label>
@@ -221,7 +249,7 @@
                                     
                                    
                                     <br>
-                                   <h5 class="fsize-medium"><b>Terms and Condition</b></h5>
+                                   <h6 class="text-uppercase text-black-50 mb-1" class="fsize-medium"><b>Terms and Condition</b></h6 class="text-uppercase text-black-50 mb-1">
                                    <div class="row fsize-small">
                                     <div class="col form-group">
                                         <label for="inputState">Payment Terms*</label>
@@ -232,8 +260,9 @@
                                     </div>
                                 </div><br>
                                 
-                                    <h5 class="fsize-medium"><b>Product Details</b></h5>
-                                    <h6><b><span class="fsize-small" style="color:grey">1) BM9F3W8- BULK MRO APPROVED PVC Solvent, Pack Size 250 ml</span></b></h6>
+                                    <h6 class="text-uppercase text-black-50 mb-1" class="fsize-medium"><b>Product Details</b></h6 class="text-uppercase text-black-50 mb-1">
+                                    <!--<div>
+                                    <h6 class="text-uppercase text-black-50 mb-1"><b><span class="fsize-small" style="color:grey">1) BM9F3W8- BULK MRO APPROVED PVC Solvent, Pack Size 250 ml</span></b></h6 class="text-uppercase text-black-50 mb-1">
                                     <div class="row fsize-small">
                                         <div class="col form-group">
                                             <label>Quantity*</label>
@@ -310,15 +339,268 @@
                                                 <option>...</option>
                                             </select>
                                         </div>
+                                    </div></div>-->
+                                    <div class="showininq">
+                                        
+                                            <div class="row">
+                                                <div class="col form-group">
+                                                    <label>#</label>
+                                                    <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                                </div>
+                                                <div class="col form-group">
+                                                    <label>Product</label>
+                                                    <select id="inputState" class="form-control form-control-sm form-control form-control-sm-sm" required>
+                                                        <option selected>BM9M9P0 - FAG Deep Groove Ball Bearing, Inside Dia 30 mm, Outside Dia 72 mm, Width 19 mm - 6306-ZZ</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col form-group">
+                                                    <label>Material</label>
+                                                    <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                                </div>
+                                                <div class="col form-group">
+                                                    <label>Material Code</label>
+                                                    <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                                </div>
+                                                <div class="col form-group">
+                                                    <label>SAP Status</label>
+                                                    <span class="form-control form-control-sm">YES</span>
+                                                </div>
+                                                <div class="col form-group">
+                                                    <label>Quantity</label>
+                                                    <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" placeholder="10" required>
+                                                </div>
+                                                <div class="col form-group">
+                                                    <label>Inventory</label>
+                                                    <span class="form-control form-control-sm">NO</span>
+                                                </div>
+                                                
+                                            
+                                            </div>
+                                            <div class="row">
+                                                <div class="col form-group">
+                                                    <label>#</label>
+                                                    <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                                </div>
+                                                <div class="col form-group">
+                                                    <label>Product</label>
+                                                    <select id="inputState" class="form-control form-control-sm form-control form-control-sm-sm" required>
+                                                        <option selected>BM9M9P0 - FAG Deep Groove Ball Bearing, Inside Dia 30 mm, Outside Dia 72 mm, Width 19 mm - 6306-ZZ</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col form-group">
+                                                    <label>Material</label>
+                                                    <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                                </div>
+                                                <div class="col form-group">
+                                                    <label>Material Code</label>
+                                                    <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                                </div>
+                                                <div class="col form-group">
+                                                    <label>SAP Status</label>
+                                                    <span class="form-control form-control-sm">YES</span>
+                                                </div>
+                                                <div class="col form-group">
+                                                    <label>Quantity</label>
+                                                    <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" placeholder="10" required>
+                                                </div>
+                                                <div class="col form-group">
+                                                    <label>Inventory</label>
+                                                    <span class="form-control form-control-sm">NO</span>
+                                                </div>
+                                                
+                                            
+                                            </div>
+                                            <div class="form-row">
+                                                    <div class="col-md-3">
+                                                    <a href="#" class="btn btn-success btn-outline-success btn-block mb-2 mb-md-0"><i class="fal fa-file-excel mr-1"></i>Add
+                                                    products using excel</a>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                    <a href="#" class="btn btn-outline-success btn-block mb-2 mb-md-0"><i class="fal fa-clipboard-list mr-1"></i>Add
+                                                    products through list</a>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                    <a class="btn btn-outline-success btn-block mb-2 mb-md-0 add_nested_fields_link addproinq" data-association-path="inquiry_inquiry_products" data-object-class="inquiry_product" href="#">
+                                                    <i class="fal fa-plus-circle mr-1"></i>Add a product
+                                                    </a> </div>
+                                                    <div class="col-md-3">
+                                                    <a href="#" class="btn btn-outline-success btn-block mb-2 mb-md-0"><i class="fal fa-clipboard-list mr-1"></i>Create
+                                                    Kit</a>
+                                                    </div>
+                                            </div>
                                     </div>
+                                    <div class="showothers">
+                                            <div class="card">
+                                                    <div class="card-body">
+                                            <div class="row">
+                                            <div class="col form-group">
+                                                <label>#</label>
+                                                <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Product</label>
+                                                <select id="inputState" class="form-control form-control-sm form-control form-control-sm-sm" required>
+                                                    <option selected>BM9M9P0 - FAG Deep Groove Ball Bearing, Inside Dia 30 mm, Outside Dia 72 mm, Width 19 mm - 6306-ZZ</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Material</label>
+                                                <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Material Code</label>
+                                                <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>SAP Status</label>
+                                                <span class="form-control form-control-sm">YES</span>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Quantity</label>
+                                                <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" placeholder="10" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col form-group">
+                                                <label>Inventory</label>
+                                                <span class="form-control form-control-sm">NO</span>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Unit Price*</label>
+                                                <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Tax Rate*</label>
+                                                <select id="inputState" class="form-control form-control-sm" required>
+                                                    <option selected>12% GST</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Tax Code*</label>
+                                                <select id="inputState" class="form-control form-control-sm" required>
+                                                    <option selected>#92379</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Unit*</label>
+                                                <select id="inputState" class="form-control form-control-sm" required>
+                                                    <option selected>EA</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Supplier*</label>
+                                                <select id="inputState" class="form-control form-control-sm" required>
+                                                    <option selected>NEWI</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                                    </div></div><br>
+                                                    <div class="card">
+                                                            <div class="card-body">
+                                                    <div class="row">
+                                                    <div class="col form-group">
+                                                        <label>#</label>
+                                                        <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                                    </div>
+                                                    <div class="col form-group">
+                                                        <label>Product</label>
+                                                        <select id="inputState" class="form-control form-control-sm form-control form-control-sm-sm" required>
+                                                            <option selected>BM9M9P0 - FAG Deep Groove Ball Bearing, Inside Dia 30 mm, Outside Dia 72 mm, Width 19 mm - 6306-ZZ</option>
+                                                            <option>...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col form-group">
+                                                        <label>Material</label>
+                                                        <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                                    </div>
+                                                    <div class="col form-group">
+                                                        <label>Material Code</label>
+                                                        <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                                    </div>
+                                                    <div class="col form-group">
+                                                        <label>SAP Status</label>
+                                                        <span class="form-control form-control-sm">YES</span>
+                                                    </div>
+                                                    <div class="col form-group">
+                                                        <label>Quantity</label>
+                                                        <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" placeholder="10" required>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col form-group">
+                                                        <label>Inventory</label>
+                                                        <span class="form-control form-control-sm">NO</span>
+                                                    </div>
+                                                    <div class="col form-group">
+                                                        <label>Unit Price*</label>
+                                                        <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required>
+                                                    </div>
+                                                    <div class="col form-group">
+                                                        <label>Tax Rate*</label>
+                                                        <select id="inputState" class="form-control form-control-sm" required>
+                                                            <option selected>12% GST</option>
+                                                            <option>...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col form-group">
+                                                        <label>Tax Code*</label>
+                                                        <select id="inputState" class="form-control form-control-sm" required>
+                                                            <option selected>#92379</option>
+                                                            <option>...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col form-group">
+                                                        <label>Unit*</label>
+                                                        <select id="inputState" class="form-control form-control-sm" required>
+                                                            <option selected>EA</option>
+                                                            <option>...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col form-group">
+                                                        <label>Supplier*</label>
+                                                        <select id="inputState" class="form-control form-control-sm" required>
+                                                            <option selected>NEWI</option>
+                                                            <option>...</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                            </div></div><br>
+                                        <div class="form-row">
+                                                <div class="col-md-3">
+                                                <a href="#" class="btn btn-success btn-outline-success btn-block mb-2 mb-md-0"><i class="fal fa-file-excel mr-1"></i>Add
+                                                products using excel</a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                <a href="#" class="btn btn-outline-success btn-block mb-2 mb-md-0"><i class="fal fa-clipboard-list mr-1"></i>Add
+                                                products through list</a>
+                                                </div>
+                                                <div class="col-md-3">
+                                                <a href="#" class="btn btn-outline-success btn-block mb-2 mb-md-0 add_nested_fields_link" data-association-path="inquiry_inquiry_products addallpro" data-object-class="inquiry_product">
+                                                <i class="fal fa-plus-circle mr-1"></i>Add a product
+                                                </a> </div>
+                                                <div class="col-md-3">
+                                                <a href="#" class="btn btn-outline-success btn-block mb-2 mb-md-0"><i class="fal fa-clipboard-list mr-1"></i>Create
+                                                Kit</a>
+                                                </div>
+                                            </div>
+                                    </div>
+                                        
                                 </div>
                             </div>
+                           
                     <div class="card inqshow">
                         <div class="card-body">
                             <h2 class="card-title fsize-big" style="color:orange;">Inquiry Fields</h2>
-                            <h5 class="fsize-medium"><b>Inquiry Details</b></h5>
+                            <h6 class="text-uppercase text-black-50 mb-1" class="fsize-medium"><b>Inquiry Details</b></h6 class="text-uppercase text-black-50 mb-1">
                             <div class="row">
-                                <div class="col">
+                                <div class="col form-group">
                                     <label>Calculation Sheet*</label>
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input" id="customFile">
@@ -366,7 +648,7 @@
                                 </div>
                             </div>
                             
-                           <h5 class="fsize-medium"><b>Owner Details</b></h5>
+                           <h6 class="text-uppercase text-black-50 mb-1" class="fsize-medium"><b>Owner Details</b></h6 class="text-uppercase text-black-50 mb-1">
                            <div class="row fsize-small">
                                 <div class="col form-group">
                                     <label for="inputState">Procurement Specialist*</label>
@@ -396,15 +678,24 @@
                                         <option>...</option>
                                     </select>
                                 </div>
+                            </div><br>
+                            <div class="row">
+                            <div class="col-md-6">
+                                <a href="#" class="btn-block btn btn-dark"><i class="fal fa-envelope mr-1"></i>Send
+                                Acknowledgement</a>
                             </div>
-                        
+                            <div class="mt-1 mt-md-0 col-md-6">
+                            <button name="button" type="submit" class="btn btn-warning btn-block"><i class="fal fa-pen mr-1"></i><span>Update Inquiry </span></button>
+                            </div>
+                            </div>
+                            </div>
                         
                         </div>
                     </div>
                     <div class="card sqshow">
                             <div class="card-body">
                                 <h2 class="card-title fsize-big" style="color:orange;">Sales Quotes</h2>
-                                <h5 class="fsize-medium"><b>Sales Quote Details</b></h5>
+                                <h6 class="text-uppercase text-black-50 mb-1" class="fsize-medium"><b>Sales Quote Details</b></h6 class="text-uppercase text-black-50 mb-1">
                                 <div class="row">
                                     <div class="col form-group fsize-small">
                                         <label>Customer Order Date*</label>
@@ -433,12 +724,15 @@
                                         </select>
                                     </div>
                                 </div>
+                                <div class="form-row"><div class="col-6"><button name="save" type="submit" class="btn btn-warning btn-block"><i class="fal fa-pen mr-1"></i> Save as Draft
+                                </button></div> <div class="col-6"><button name="save_and_preview" type="submit" class="btn btn-success btn-block"><i class="far fa-check mr-1"></i> Save and Preview
+                                </button></div></div>
                             </div>
                         </div>
                     <div class="card soshow">
                             <div class="card-body">
                                 <h2 class="card-title fsize-big" style="color:orange;">Sales Order</h2>
-                                <h5 class="fsize-medium"><b>Sales Order Details</b></h5>
+                                <h6 class="text-uppercase text-black-50 mb-1" class="fsize-medium"><b>Sales Order Details</b></h6 class="text-uppercase text-black-50 mb-1">
                                 <div class="row">
                                     <div class="col form-group fsize-small">
                                         <label>Customer Order Date*</label>
@@ -472,7 +766,7 @@
                         <div class="card poshow">
                                 <div class="card-body">
                                     <h2 class="card-title fsize-big" style="color:orange;">Purchase Order</h2>
-                                    <h5 class="fsize-medium"><b>Purchase Order Details</b></h5>
+                                    <h6 class="text-uppercase text-black-50 mb-1" class="fsize-medium"><b>Purchase Order Details</b></h6 class="text-uppercase text-black-50 mb-1">
                                     <div class="row">
                                         <div class="col form-group fsize-small">
                                             <label>Customer Order Date*</label>
@@ -506,7 +800,7 @@
                         <div class="card arinvshow">
                         <div class="card-body">
                             <h2 class="card-title fsize-big" style="color:orange;">AR INVOICE</h2>
-                            <h5 class="fsize-medium"><b>AR Details</b></h5>
+                            <h6 class="text-uppercase text-black-50 mb-1" class="fsize-medium"><b>AR Details</b></h6 class="text-uppercase text-black-50 mb-1">
                             <div class="row">
                                 <div class="col form-group fsize-small">
                                     <label>Material Dispatch Date*</label>
@@ -528,8 +822,9 @@
                             
                         </div>
                     </div>
-                    <button type="submit" class="btn my-primary subshhd">Submit</button>
+                    <!--<button type="submit" class="btn my-primary subshhd">Submit</button>-->
                 </form>
+            </div>
             </div>
     </body>
     <script>
@@ -559,6 +854,8 @@
             $('.appnlist').remove();
             $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="first_page.html" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New Inquiry</li></ol>');
             $(".hidemand").show();
+            $(".showininq").show();
+            $(".showothers").hide();
             $(".inqshow").show();
             $(".subshhd").show();
         })
@@ -575,6 +872,8 @@
             $('.appnlist').remove();
             $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="first_page.html" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New Sales Quote</li></ol>');
             $(".hidemand").show();
+            $(".showininq").hide();
+            $(".showothers").show();
             $(".sqshow").show();
             $(".subshhd").show();
         })
@@ -591,6 +890,8 @@
             $('.appnlist').remove();
             $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="first_page.html" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New Sales Order</li></ol>');
             $(".hidemand").show();
+            $(".showininq").hide();
+            $(".showothers").show();
             $(".soshow").show();
             $(".subshhd").show();
         })
@@ -607,6 +908,8 @@
             $('.appnlist').remove();
             $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="first_page.html" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New Supplier PO</li></ol>');
             $(".hidemand").show();
+            $(".showininq").hide();
+            $(".showothers").show();
             $(".poshow").show();
             $(".subshhd").show();
         })
@@ -623,6 +926,8 @@
             $('.appnlist').remove();
             $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="first_page.html" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New AR Invoice</li></ol>');
             $(".hidemand").show();
+            $(".showininq").hide();
+            $(".showothers").show();
             $(".arinvshow").show();
             $(".subshhd").show();
         })
