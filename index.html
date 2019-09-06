@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
         <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
+        <!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">!-->
         <script>
             $(document).ready(function(){
                 $('.navshow').hide();
@@ -19,6 +20,7 @@
                 $(".poshow").hide();
                 $(".arinvshow").hide();
                 $(".subshhd").hide();
+                $(".showonpo").hide();
             });
         </script>
     </head>
@@ -155,15 +157,15 @@
                         <h3><span class="plus">+</span>New</h3>
 
                     <ul>
-                        <li><button type="button" class="btn btn-light btn-lg inq" style="width:100%"><span class=".fsize-big">Inquiry</span></button>
+                        <li><button type="button" class="btn btn-light btn-lg inq text-left" style="width:100%"><span class=".fsize-big">Inquiry</span></button>
                         </li>
-                        <li><button type="button" class="btn btn-light btn-lg salesq" style="width:100%"><span class=".fsize-big">Sales Quotes</span></button>
+                        <li><button type="button" class="btn btn-light btn-lg salesq text-left" style="width:100%"><span class=".fsize-big">Sales Quotes</span></button>
                         </li>
-                        <li><button type="button" class="btn btn-light btn-lg saleso" style="width:100%"><span class=".fsize-big">Sales Orders</span></button>
+                        <li><button type="button" class="btn btn-light btn-lg saleso text-left" style="width:100%"><span class=".fsize-big">Sales Orders</span></button>
                         </li>
-                        <li><button type="button" class="btn btn-light btn-lg suppo" style="width:100%"><span class=".fsize-big">Supplier PO</span></button>
+                        <li><button type="button" class="btn btn-light btn-lg suppo text-left" style="width:100%"><span class=".fsize-big">Supplier PO</span></button>
                         </li>
-                        <li><button type="button" class="btn btn-light btn-lg arinv" style="width:100%"><span class=".fsize-big">AR Invoice</span></button>
+                        <li><button type="button" class="btn btn-light btn-lg arinv text-left" style="width:100%"><span class=".fsize-big">AR Invoice Request</span></button>
                         </li>
                     </ul>
                 </li>
@@ -173,7 +175,7 @@
         <div class="container">
         <nav aria-label="breadcrumb" class="navshow">
                 <ol class="breadcrumb appnlist" style="background-color: white">
-                    <li class="breadcrumb-item"><a href="first_page.html" style="color:orange;">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#" style="color:orange;">Home</a></li>
                 </ol>
             </nav>
             <div>
@@ -245,14 +247,14 @@
                                             <div class="col form-group">
                                                 <label for="inputState">Billing Address*</label>
                                                 <select name="billto" id="inputState" class="form-control form-control-sm" required>
-                                                    <option selected>-SR INTEGRATED CIRCUIT INDIA PVT LTD, NO.9,3RD MAIN,KENDRA UPADYAYARA</option>
+                                                    <option selected>SR INTEGRATED CIRCUIT INDIA PVT LTD, NO.9,3RD MAIN,KENDRA UPADYAYARA</option>
                                                     <option>...</option>
                                                 </select>
                                             </div>
                                             <div class="col form-group">
                                                 <label for="inputState">Shipping Address*</label>
                                                 <select name="shipto" id="inputState" class="form-control form-control-sm" required>
-                                                    <option selected>-SR INTEGRATED CIRCUIT INDIA PVT LTD, NO.9,3RD MAIN,KENDRA UPADYAYARA</option>
+                                                    <option selected>SR INTEGRATED CIRCUIT INDIA PVT LTD, NO.9,3RD MAIN,KENDRA UPADYAYARA</option>
                                                     <option>...</option>
                                                 </select>
                                             </div>
@@ -366,25 +368,25 @@
                                                     </select>
                                                 </div>
                                                 <div class="col form-group">
-                                                    <label>Material</label>
+                                                    <label>Customer Material</label>
                                                     <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
                                                 </div>
                                                 <div class="col form-group">
-                                                    <label>Material Code</label>
+                                                    <label>Customer Material Code</label>
                                                     <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
                                                 </div>
-                                                <div class="col form-group">
+                                                <!--<div class="col form-group">
                                                     <label>SAP Status</label>
-                                                    <span class="form-control form-control-sm">YES</span>
-                                                </div>
+                                                    <span class="badge badge-success text-uppercase">SYNCED</span>
+                                                </div>-->
                                                 <div class="col form-group">
                                                     <label>Quantity</label>
                                                     <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" placeholder="10" required>
                                                 </div>
-                                                <div class="col form-group">
+                                                <!--<div class="col form-group">
                                                     <label>Inventory</label>
                                                     <span class="form-control form-control-sm">NO</span>
-                                                </div>
+                                                </div>-->
                                                 
                                             
                                             </div>
@@ -401,25 +403,25 @@
                                                     </select>
                                                 </div>
                                                 <div class="col form-group">
-                                                    <label>Material</label>
+                                                    <label>Customer Material</label>
                                                     <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
                                                 </div>
                                                 <div class="col form-group">
-                                                    <label>Material Code</label>
+                                                    <label>Customer Material Code</label>
                                                     <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
                                                 </div>
-                                                <div class="col form-group">
+                                                <!--<div class="col form-group">
                                                     <label>SAP Status</label>
-                                                    <span class="form-control form-control-sm">YES</span>
-                                                </div>
+                                                    <span class="badge badge-success text-uppercase">SYNCED</span>
+                                                </div>-->
                                                 <div class="col form-group">
                                                     <label>Quantity</label>
                                                     <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" placeholder="10" required>
                                                 </div>
-                                                <div class="col form-group">
+                                                <!--<div class="col form-group">
                                                     <label>Inventory</label>
                                                     <span class="form-control form-control-sm">NO</span>
-                                                </div>
+                                                </div>-->
                                                 
                                             
                                             </div>
@@ -446,10 +448,10 @@
                                             <div class="card">
                                                     <div class="card-body">
                                             <div class="row">
-                                            <div class="col form-group">
+                                            <!--<div class="col form-group">
                                                 <label>#</label>
                                                 <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
-                                            </div>
+                                            </div>-->
                                             <div class="col form-group">
                                                 <label>Product</label>
                                                 <select id="inputState" class="form-control form-control-sm form-control form-control-sm-sm" required>
@@ -458,27 +460,28 @@
                                                 </select>
                                             </div>
                                             <div class="col form-group">
-                                                <label>Material</label>
+                                                <label>Customer Material</label>
                                                 <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
                                             </div>
                                             <div class="col form-group">
-                                                <label>Material Code</label>
+                                                <label>Customer Material Code</label>
                                                 <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
                                             </div>
-                                            <div class="col form-group">
+                                            <!--<div class="col form-group">
                                                 <label>SAP Status</label>
                                                 <span class="form-control form-control-sm">YES</span>
-                                            </div>
+                                            </div>-->
                                             <div class="col form-group">
                                                 <label>Quantity</label>
                                                 <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" placeholder="10" required>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col form-group">
+                                            <!--<div class="col form-group">
                                                 <label>Inventory</label>
                                                 <span class="form-control form-control-sm">NO</span>
-                                            </div>
+                                            </div>-->
+                                        </div>
+                                        <div class="row">
+                                            
                                             <div class="col form-group">
                                                 <label>Unit Price*</label>
                                                 <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required>
@@ -498,7 +501,7 @@
                                                 </select>
                                             </div>
                                             <div class="col form-group">
-                                                <label>Unit*</label>
+                                                <label>Measurement Unit*</label>
                                                 <select id="inputState" class="form-control form-control-sm" required>
                                                     <option selected>EA</option>
                                                     <option>...</option>
@@ -511,78 +514,91 @@
                                                     <option>...</option>
                                                 </select>
                                             </div>
+                                            <div class="col form-group showonpo">
+                                                <label>Lead Date</label>
+                                                    <input class="form-control form-control-sm" id="datepicker8">
+                                            </div>
+                                            
                                         </div>
+                                        
+                                            </div></div><br>
+                                            <div class="card">
+                                                    <div class="card-body">
+                                            <div class="row">
+                                            <!--<div class="col form-group">
+                                                <label>#</label>
+                                                <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                            </div>-->
+                                            <div class="col form-group">
+                                                <label>Product</label>
+                                                <select id="inputState" class="form-control form-control-sm form-control form-control-sm-sm" required>
+                                                    <option selected>BM9M9P0 - FAG Deep Groove Ball Bearing, Inside Dia 30 mm, Outside Dia 72 mm, Width 19 mm - 6306-ZZ</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Customer Material</label>
+                                                <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Customer Material Code</label>
+                                                <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
+                                            </div>
+                                            <!--<div class="col form-group">
+                                                <label>SAP Status</label>
+                                                <span class="form-control form-control-sm">YES</span>
+                                            </div>-->
+                                            <div class="col form-group">
+                                                <label>Quantity</label>
+                                                <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" placeholder="10" required>
+                                            </div>
+                                            <!--<div class="col form-group">
+                                                <label>Inventory</label>
+                                                <span class="form-control form-control-sm">NO</span>
+                                            </div>-->
+                                        </div>
+                                        <div class="row">
+                                            
+                                            <div class="col form-group">
+                                                <label>Unit Price*</label>
+                                                <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Tax Rate*</label>
+                                                <select id="inputState" class="form-control form-control-sm" required>
+                                                    <option selected>12% GST</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Tax Code*</label>
+                                                <select id="inputState" class="form-control form-control-sm" required>
+                                                    <option selected>#92379</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Measurement Unit*</label>
+                                                <select id="inputState" class="form-control form-control-sm" required>
+                                                    <option selected>EA</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col form-group">
+                                                <label>Supplier*</label>
+                                                <select id="inputState" class="form-control form-control-sm" required>
+                                                    <option selected>NEWI</option>
+                                                    <option>...</option>
+                                                </select>
+                                            </div>
+                                            <div class="col form-group showonpo">
+                                                <label>Lead Date</label>
+                                                <input class="form-control form-control-sm" id="datepicker9">
+                                            </div>
+                                            
+                                        </div>
+                                        
                                                     </div></div><br>
-                                                    <div class="card">
-                                                            <div class="card-body">
-                                                    <div class="row">
-                                                    <div class="col form-group">
-                                                        <label>#</label>
-                                                        <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
-                                                    </div>
-                                                    <div class="col form-group">
-                                                        <label>Product</label>
-                                                        <select id="inputState" class="form-control form-control-sm form-control form-control-sm-sm" required>
-                                                            <option selected>BM9M9P0 - FAG Deep Groove Ball Bearing, Inside Dia 30 mm, Outside Dia 72 mm, Width 19 mm - 6306-ZZ</option>
-                                                            <option>...</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col form-group">
-                                                        <label>Material</label>
-                                                        <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
-                                                    </div>
-                                                    <div class="col form-group">
-                                                        <label>Material Code</label>
-                                                        <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required>
-                                                    </div>
-                                                    <div class="col form-group">
-                                                        <label>SAP Status</label>
-                                                        <span class="form-control form-control-sm">YES</span>
-                                                    </div>
-                                                    <div class="col form-group">
-                                                        <label>Quantity</label>
-                                                        <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" placeholder="10" required>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col form-group">
-                                                        <label>Inventory</label>
-                                                        <span class="form-control form-control-sm">NO</span>
-                                                    </div>
-                                                    <div class="col form-group">
-                                                        <label>Unit Price*</label>
-                                                        <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required>
-                                                    </div>
-                                                    <div class="col form-group">
-                                                        <label>Tax Rate*</label>
-                                                        <select id="inputState" class="form-control form-control-sm" required>
-                                                            <option selected>12% GST</option>
-                                                            <option>...</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col form-group">
-                                                        <label>Tax Code*</label>
-                                                        <select id="inputState" class="form-control form-control-sm" required>
-                                                            <option selected>#92379</option>
-                                                            <option>...</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col form-group">
-                                                        <label>Unit*</label>
-                                                        <select id="inputState" class="form-control form-control-sm" required>
-                                                            <option selected>EA</option>
-                                                            <option>...</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col form-group">
-                                                        <label>Supplier*</label>
-                                                        <select id="inputState" class="form-control form-control-sm" required>
-                                                            <option selected>NEWI</option>
-                                                            <option>...</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                            </div></div><br>
                                         <div class="form-row">
                                                 <div class="col-md-3">
                                                 <a href="#" class="btn btn-success btn-outline-success btn-block mb-2 mb-md-0"><i class="fal fa-file-excel mr-1"></i>Add
@@ -736,8 +752,8 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="form-row"><div class="col-6"><button name="save" type="submit" class="btn btn-warning btn-block"><i class="fal fa-pen mr-1"></i> Save as Draft
-                                </button></div> <div class="col-6"><button name="save_and_preview" type="submit" class="btn btn-success btn-block"><i class="far fa-check mr-1"></i> Save and Preview
+                                <div class="form-row"><div class="col-6"><button name="save" type="submit" class="btn btn-warning btn-block"><i class="fal fa-pen mr-1"></i> Edit
+                                </button></div> <div class="col-6"><button name="save_and_preview" type="submit" class="btn btn-success btn-block"><i class="far fa-check mr-1"></i> Save and Confirm
                                 </button></div></div>
                             </div>
                         </div>
@@ -773,12 +789,17 @@
                                         </select>
                                     </div>
                                 </div>
+                                <div class="form-row">
+                                    <button name="button" type="submit" class="btn btn-success btn-block submit-form">
+                                    <i class="fal fa-pen"></i>
+                                    Save And Confirm
+                                </button> </div>
                             </div>
                         </div>
                         <div class="card poshow">
                                 <div class="card-body">
-                                    <h2 class="card-title fsize-big" style="color:orange;">Purchase Order</h2>
-                                    <h6 class="text-uppercase text-black-50 mb-1" class="fsize-medium">Purchase Order Details</h6 class="text-uppercase text-black-50 mb-1">
+                                    <h2 class="card-title fsize-big" style="color:orange;">Purchase Order Request</h2>
+                                    <h6 class="text-uppercase text-black-50 mb-1" class="fsize-medium">Purchase Order Request Details</h6 class="text-uppercase text-black-50 mb-1">
                                     <div class="row">
                                         <div class="col form-group fsize-small">
                                             <label>Customer Order Date*</label>
@@ -792,7 +813,93 @@
                                     </div>
                                     <div class="row fsize-small">
                                         <div class="col form-group">
-                                            <label>Currency*</label>
+                                            <label>Supplier PO Type*</label>
+                                            <select id="inputState" class="form-control form-control-sm" required>
+                                                <option selected>Regular</option>
+                                                <option>Route Through</option>
+                                                <option>Drop Ship</option>
+                                            </select>
+                                            <!--small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                                        </div>
+                                        <div class="col form-group">
+                                            <label>Contact</label>
+                                            <select id="inputState" class="form-control form-control-sm" required>
+                                                <option selected>Lorem Ipsum</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col form-group">
+                                            <label>Contact Email</label>
+                                            <select id="inputState" class="form-control form-control-sm" required>
+                                                <option selected>abc.qwda@mdsl.com</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col form-group">
+                                            <label>Contact Phone*</label>
+                                            <input name="companyname" type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="Henkel" required>
+                                        </div>
+                                    </div>
+                                    <div class="row fsize-small">
+                                        <div class="col form-group">
+                                            <label for="inputState">Bill From*</label>
+                                            <select name="billfrom" id="inputState" class="form-control form-control-sm" required>
+                                                <option selected>Lower Parel, Mumbai</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col form-group">
+                                            <label for="inputState">Ship From*</label>
+                                            <select name="shipfrom" id="inputState" class="form-control form-control-sm" required>
+                                                <option selected>Lower Parel, Mumbai</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row fsize-small">
+                                        <div class="col form-group">
+                                            <label for="inputState">Bill To*</label>
+                                            <select name="billto" id="inputState" class="form-control form-control-sm" required>
+                                                <option selected>SR INTEGRATED CIRCUIT INDIA PVT LTD, NO.9,3RD MAIN,KENDRA UPADYAYARA</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col form-group">
+                                            <label for="inputState">Ship To*</label>
+                                            <select name="shipto" id="inputState" class="form-control form-control-sm" required>
+                                                <option selected>SR INTEGRATED CIRCUIT INDIA PVT LTD, NO.9,3RD MAIN,KENDRA UPADYAYARA</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col form-group fsize-small">
+                                            <label>Delivery Type*</label>
+                                            <select id="inputState" class="form-control form-control-sm" required>
+                                                <option selected>EXW</option>
+                                                <option>FOB</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col form-group">
+                                            <label>Transport Mode*</label>
+                                            <select id="inputState" class="form-control form-control-sm" required>
+                                                <option selected>Road</option>
+                                                <option selected>Air</option>
+                                                <option>...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row fsize-small">
+                                        <div class="col form-group">
+                                            <label>Attachments*</label>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label form-control form-control-sm-sm" for="customFile">Choose file</label>
+                                            </div>
+                                        </div>
+                                        <div class="col form-group">
+                                            <label>PO Currency*</label>
                                             <select id="inputState" class="form-control form-control-sm" required>
                                                 <option selected>INR</option>
                                                 <option>...</option>
@@ -806,7 +913,19 @@
                                                 <option>...</option>
                                             </select>
                                         </div>
-                                    </div>
+                                        <div class="col form-group">
+                                            <label>Freight*</label>
+                                            <select id="inputState" class="form-control form-control-sm" required>
+                                                <option selected>Included</option>
+                                                <option>Excluded</option>
+                                            </select>
+                                        </div>
+                                    </div><br>
+                                    <div class="form-row">
+                                        <button name="button" type="submit" class="btn btn-success btn-block submit-form">
+                                        <i class="fal fa-pen"></i>
+                                        Create PO Request
+                                    </button></div>
                                 </div>
                             </div>
                         <div class="card arinvshow">
@@ -814,24 +933,48 @@
                             <h2 class="card-title fsize-big" style="color:orange;">AR INVOICE</h2>
                             <h6 class="text-uppercase text-black-50 mb-1" class="fsize-medium">AR Details</h6 class="text-uppercase text-black-50 mb-1">
                             <div class="row">
-                                <div class="col form-group fsize-small">
-                                    <label>Material Dispatch Date*</label>
-                                    <input class="form-control form-control-sm" id="datepicker6">
-                                    <!--small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
-                                </div>
                                 <div class="col form-group">
-                                    <label>Expected Date*</label>
-                                    <input class="form-control form-control-sm" id="datepicker7">
-                                </div>
-                                <div class="col form-group">
-                                    <label for="inputState">Material Dispatched By*</label>
-                                    <select id="inputState" class="form-control form-control-sm" required>
-                                        <option selected>JHIQWUIYE</option>
-                                        <option>...</option>
+                                    <label>Status</label>
+                                    <select id="inputState" class="form-control form-control-sm selectforinp" required>
+                                        <option selected="selected" value="AR Invoice requested">AR Invoice requested</option>
+                                        <option value="Cancelled AR Invoice">Cancelled AR Invoice</option>
+                                        <option value="AR Invoice Request Rejected">AR Invoice Request Rejected</option>
+                                        <option value="Completed AR Invoice Request">Completed AR Invoice Request</option>
                                     </select>
                                 </div>
                             </div>
-                            
+
+                            <div class="row arcancel">
+                                <div class="col form-group">
+                                    <label>AR Cancellation Reason</label>
+                                    <select id="inputState" class="form-control form-control-sm" required>
+                                        <option value="Freight Charges Not Included">Freight Charges Not Included</option>
+                                        <option value="Installation Charges Not Included">Installation Charges Not Included</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row arreject">
+                                    <div class="col form-group">
+                                        <label>AR Rejection Reason</label>
+                                        <select id="inputState" class="form-control form-control-sm" required>
+                                            <option>Rejected: Product not in Stock</option>
+                                            <option>Rejected: Product Qty Fulfilled</option>
+                                            <option>Others</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            <div class="row">
+                                <div class="col form-group">
+                                    <label>AR Invoice Number</label>
+                                    <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button name="button" type="submit" class="btn btn-success btn-block submit-form">
+                                <i class="fal fa-pen"></i>
+                                CREATE AR INVOICE REQUEST
+                            </button> </div>
                         </div>
                     </div>
                     <!--<button type="submit" class="btn my-primary subshhd">Submit</button>-->
@@ -864,7 +1007,7 @@
             $(".arinvshow").hide();
             $('.navshow').show();
             $('.appnlist').remove();
-            $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="first_page.html" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New Inquiry</li></ol>');
+            $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="#" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New Inquiry</li></ol>');
             $(".hidemand").show();
             $(".showininq").show();
             $(".showothers").hide();
@@ -882,7 +1025,7 @@
             $(".arinvshow").hide();
             $('.navshow').show();
             $('.appnlist').remove();
-            $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="first_page.html" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New Sales Quote</li></ol>');
+            $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="#" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New Sales Quote</li></ol>');
             $(".hidemand").show();
             $(".showininq").hide();
             $(".showothers").show();
@@ -900,7 +1043,7 @@
             $(".arinvshow").hide();
             $('.navshow').show();
             $('.appnlist').remove();
-            $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="first_page.html" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New Sales Order</li></ol>');
+            $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="#" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New Sales Order</li></ol>');
             $(".hidemand").show();
             $(".showininq").hide();
             $(".showothers").show();
@@ -918,12 +1061,13 @@
             $(".arinvshow").hide();
             $('.navshow').show();
             $('.appnlist').remove();
-            $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="first_page.html" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New Supplier PO</li></ol>');
+            $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="#" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New Supplier PO</li></ol>');
             $(".hidemand").show();
             $(".showininq").hide();
             $(".showothers").show();
             $(".poshow").show();
             $(".subshhd").show();
+            $(".showonpo").show();
         })
     </script>
     <script>
@@ -936,13 +1080,31 @@
             $(".sqshow").hide();
             $('.navshow').show();
             $('.appnlist').remove();
-            $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="first_page.html" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New AR Invoice</li></ol>');
+            $('.navshow').append('<ol class="breadcrumb appnlist" style="background-color: white"><li class="breadcrumb-item"><a href="#" style="color:orange;">Home</a></li><li class="breadcrumb-item active" aria-current="page">New AR Invoice</li></ol>');
             $(".hidemand").show();
             $(".showininq").hide();
+            $(".arcancel").hide();
+            $('.arreject').hide();
             $(".showothers").show();
             $(".arinvshow").show();
             $(".subshhd").show();
         })
+    </script>
+    <script>
+        $('.selectforinp').on('change', function() {
+            if('Cancelled AR Invoice'==$(this).find(":selected").val()){
+                $('.arreject').hide();
+                $(".arcancel").show();
+            }
+            else if('AR Invoice Request Rejected'==$(this).find(":selected").val()){
+                $(".arcancel").hide();
+                $('.arreject').show();
+            }
+            else{
+                $(".arcancel").hide();
+                $('.arreject').hide();
+            }
+        });
     </script>
     <script>
             $('#datepicker').datepicker({
@@ -967,6 +1129,12 @@
                 uiLibrary: 'bootstrap4'
             });
             $('#datepicker7').datepicker({
+                uiLibrary: 'bootstrap4'
+            });
+            $('#datepicker8').datepicker({
+                uiLibrary: 'bootstrap4'
+            });
+            $('#datepicker9').datepicker({
                 uiLibrary: 'bootstrap4'
             });
         </script>
