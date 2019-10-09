@@ -12,7 +12,8 @@
     <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <!--<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">!-->
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -230,7 +231,7 @@
                                 <label>Supplier Name*</label>
                                 <!--<input name="companyname" type="text" class="form-control form-control-sm"
                                     id="exampleInputPassword1" placeholder="Henkel" required>-->
-                                <select name="shipfrom" id="inputState" class="form-control form-control-sm" required>
+                                <select name="shipfrom" id="inputState" class="companyname form-control form-control-sm" required>
                                     <option selected>Henkel</option>
                                     <option>...</option>
                                 </select>
@@ -241,6 +242,8 @@
                                     id="exampleInputPassword1" placeholder="Henkel" required>-->
                                 <select name="shipfrom" id="inputState" class="form-control form-control-sm" required>
                                     <option selected>Henkel</option>
+                                    <option>dsanoiwehuia</option>
+                                    <option>nfifufh</option>
                                     <option>...</option>
                                 </select>
                             </div>
@@ -250,6 +253,11 @@
                                     <option selected>Yes</option>
                                     <option>No</option>
                                 </select>
+                            </div>
+                            <div class="col form-group">
+                                <label>Status</label>
+                                <input type="text" class="form-control form-control-sm form-control form-control-sm-sm"
+                                    id="exampleInputPassword1" required>
                             </div>
                             <div class="col form-group">
                                 <label>Subject*</label>
@@ -288,7 +296,7 @@
                                     <option>Hyderabad - SCB</option>
                                     <option>Hyderabad - SCB Nagar</option>
                                     <option>Makarba, Ahmedabad</option>
-                                    <option>Mumbai - Lower Parel</option>
+                                    <option selected>Mumbai - Lower Parel</option>
                                     <option>Pune - Kothrud</option>
                                     <option>Pune - Phursungi</option>
                                     <option>Vadodara - Manjalpur</option>
@@ -320,7 +328,7 @@
                                     <option>Makarba, Ahmedabad</option>
                                     <option>Mumbai - Altamount</option>
                                     <option>Mumbai - Bhiwandi</option>
-                                    <option>Mumbai - Lower Parel</option>
+                                    <option selected>Mumbai - Lower Parel</option>
                                     <option>Naroda</option>
                                 </select>
                             </div>
@@ -1390,7 +1398,7 @@
 </script>
 <script>
     $('.addproothers').click(function () {
-        $('.appendforothers').append('<div class="card"> <div class="card-body"> <div class="row"> <!--<div class="col form-group"> <label>#</label> <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required> </div>--> <div class="col form-group"> <label>Product</label> <select id="inputState" class="form-control form-control-sm form-control form-control-sm-sm" required=""> <option selected="">BM9M9P0 - FAG Deep Groove Ball Bearing, Inside Dia 30 mm, Outside Dia 72 mm, Width 19 mm - 6306-ZZ</option> <option>...</option> </select> </div> <div class="col form-group"> <label>Unit Price*</label> <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Selling Price*</label> <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Unit Freight*</label> <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Total Freight*</label> <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Tax Rate*</label> <select id="inputState" class="form-control form-control-sm" required=""> <option selected="">12% GST</option> <option>...</option> </select> </div> <div class="col form-group"> <label>Tax Code*</label> <select id="inputState" class="form-control form-control-sm" required=""> <option selected="">#92379</option> <option>...</option> </select> </div> <div class="col form-group"> <label>Tax Code*</label> <select id="inputState" class="form-control form-control-sm" required=""> <option selected="">#92379</option> <option>...</option> </select> </div> <div class="col form-group"> <label>Measurement Unit*</label> <select id="inputState" class="form-control form-control-sm" required=""> <option selected="">EA</option> <option>...</option> </select> </div> <!--<div class="col form-group"> <label>Inventory</label> <span class="form-control form-control-sm">NO</span> </div>--> </div> <div class="row"> <div class="col form-group"> <label>Customer Material</label> <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required=""> </div> <div class="col form-group"> <label>Customer Material Code</label> <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required=""> </div> <!--<div class="col form-group"> <label>SAP Status</label> <span class="form-control form-control-sm">YES</span> </div>--> <div class="col form-group"> <label>Quantity</label> <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" placeholder="10" required=""> </div> <div class="col form-group onlysupppo"> <label>Supplier*</label> <select id="inputState" class="form-control form-control-sm" required=""> <option selected="">NEWI</option> <option>...</option> </select> </div> <!--<div class="col form-group showonpo"> <label>Lead Date</label><input class="form-control form-control-sm datepicker"></div>--> </div> </div> </div> </div>')
+        $('.appendforothers').append('<div class="card"> <div class="card-body"> <div class="row"> <!--<div class="col form-group"> <label>#</label> <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required> </div>--> <div class="col form-group"><label>Sr. No.*</label> <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""></div> <div class="col form-group"> <label>Product</label> <select id="inputState" class="form-control form-control-sm form-control form-control-sm-sm" required=""> <option selected="">BM9M9P0 - FAG Deep Groove Ball Bearing, Inside Dia 30 mm, Outside Dia 72 mm, Width 19 mm - 6306-ZZ</option> <option>...</option> </select> </div> <div class="col form-group"> <label>Unit Price*</label> <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Selling Price*</label> <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Unit Freight*</label> <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Total Freight*</label> <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Tax Rate*</label> <select id="inputState" class="form-control form-control-sm" required=""> <option selected="">12% GST</option> <option>...</option> </select> </div> <div class="col form-group"> <label>Tax Code*</label> <select id="inputState" class="form-control form-control-sm" required=""> <option selected="">#92379</option> <option>...</option> </select> </div> <div class="col form-group showonpo"> <label>Lead Time Option</label><input class="form-control form-control-sm datepicker"></div> <!--<div class="col form-group"> <label>Inventory</label> <span class="form-control form-control-sm">NO</span> </div>--> </div> <div class="row"> <div class="col form-group"> <label>Margin</label><input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Total Selling Price</label><input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Unit Tax Amount</label><input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Total Tax</label><input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Total Selling Price with Tax</label><input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Total Margin</label><input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Buying Cost</label><input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Measurement Unit*</label> <select id="inputState" class="form-control form-control-sm" required=""> <option selected="">EA</option> <option>...</option> </select> </div> </div> <div class="row"> <div class="col form-group"> <label>Customer Material</label> <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required=""> </div> <div class="col form-group"> <label>Customer Material Code</label> <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required=""> </div> <!--<div class="col form-group"> <label>SAP Status</label> <span class="form-control form-control-sm">YES</span> </div>--> <div class="col form-group"> <label>Quantity</label> <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" placeholder="10" required=""> </div> <div class="col form-group onlysupppo"> <label>Supplier*</label> <select id="inputState" class="form-control form-control-sm" required=""> <option selected="">NEWI</option> <option>...</option> </select> </div> <!--<div class="col form-group showonpo"> <label>Lead Date</label><input class="form-control form-control-sm datepicker"></div>--> </div> </div> </div> </div>')
     })
 </script>
 
@@ -1635,7 +1643,13 @@
         }
     });
 </script>
-
+<script>
+    $('.companyname').on('change',function(){
+        var comname=$('.companyname').val();
+        alert(comname);
+    });
+    
+</script>
 <script>
     $('body').on('focus', ".datepicker", function () {
         $(this).datepicker({
