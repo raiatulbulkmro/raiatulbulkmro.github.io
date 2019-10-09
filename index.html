@@ -228,13 +228,21 @@
                         <div class="row">
                             <div class="col form-group onlysupppo">
                                 <label>Supplier Name*</label>
-                                <input name="companyname" type="text" class="form-control form-control-sm"
-                                    id="exampleInputPassword1" placeholder="Henkel" required>
+                                <!--<input name="companyname" type="text" class="form-control form-control-sm"
+                                    id="exampleInputPassword1" placeholder="Henkel" required>-->
+                                <select name="shipfrom" id="inputState" class="form-control form-control-sm" required>
+                                    <option selected>Henkel</option>
+                                    <option>...</option>
+                                </select>
                             </div>
                             <div class="col form-group showtoall">
                                 <label>Company Name*</label>
-                                <input name="companyname" type="text" class="form-control form-control-sm"
-                                    id="exampleInputPassword1" placeholder="Henkel" required>
+                                <!--<input name="companyname" type="text" class="form-control form-control-sm"
+                                    id="exampleInputPassword1" placeholder="Henkel" required>-->
+                                <select name="shipfrom" id="inputState" class="form-control form-control-sm" required>
+                                    <option selected>Henkel</option>
+                                    <option>...</option>
+                                </select>
                             </div>
                             <div class="col form-group">
                                 <label for="inputState">Is SEZ*</label>
@@ -242,6 +250,11 @@
                                     <option selected>Yes</option>
                                     <option>No</option>
                                 </select>
+                            </div>
+                            <div class="col form-group">
+                                <label>Subject*</label>
+                                <input type="text" class="form-control form-control-sm form-control form-control-sm-sm"
+                                    id="exampleInputPassword1" placeholder="Lab test inquiry" required>
                             </div>
                         </div><br>
                         <h6 class="text-uppercase text-black-50 mb-1" class="fsize-medium">Billing/Shipping Details</h6
@@ -264,26 +277,62 @@
                             <div class="col form-group showtoall">
                                 <label for="inputState">Bill From*</label>
                                 <select name="billfrom" id="inputState" class="form-control form-control-sm" required>
-                                    <option selected>Lower Parel, Mumbai</option>
-                                    <option>...</option>
+                                    <option>Alstom - Addison Open Order</option>
+                                    <option>Bangalore - Hoskote</option>
+                                    <option>Chennai</option>
+                                    <option>Delhi - Janakpuri</option>
+                                    <option>Delhi - Okhla</option>
+                                    <option>Drop Ship Ahmedabad - Bopal</option>
+                                    <option>Drop Ship - Chennai</option>
+                                    <option>Drop Ship - Delhi Janakpuri</option>
+                                    <option>Hyderabad - SCB</option>
+                                    <option>Hyderabad - SCB Nagar</option>
+                                    <option>Makarba, Ahmedabad</option>
+                                    <option>Mumbai - Lower Parel</option>
+                                    <option>Pune - Kothrud</option>
+                                    <option>Pune - Phursungi</option>
+                                    <option>Vadodara - Manjalpur</option>
+                                    <option>Vadodara - Manjarlpur 2</option>
                                 </select>
                             </div>
                             <div class="col form-group showtoall">
                                 <label for="inputState">Ship From*</label>
                                 <select name="shipfrom" id="inputState" class="form-control form-control-sm" required>
-                                    <option selected>Lower Parel, Mumbai</option>
-                                    <option>...</option>
+                                    <option>Alstom - Addison Open Order</option>
+                                    <option>Amazon Online Sales</option>
+                                    <option>Bangalore - Hoskote</option>
+                                    <option>Banglore</option>
+                                    <option>BulkMRO Inc - Bhiwandi</option>
+                                    <option>Bulk MRO Industrial Supply Inc (USA)</option>
+                                    <option>BulkMRO Services (ST 15%)</option>
+                                    <option>Chennai</option>
+                                    <option>Delhi - Janakpuri</option>
+                                    <option>Delhi - Okhla</option>
+                                    <option>Drop Ship Ahmedabad - Bopal</option>
+                                    <option>Drop Ship - Ahmedabad-Dev Priya</option>
+                                    <option>Drop Ship - Chennai</option>
+                                    <option>Drop Ship - Delhi Janakpuri</option>
+                                    <option>Drop Ship - Lower Parel</option>
+                                    <option>GE warehouse</option>
+                                    <option>Hyderabad - SCB</option>
+                                    <option>Hyderabad - SCB Nagar</option>
+                                    <option>Indore</option>
+                                    <option>Makarba, Ahmedabad</option>
+                                    <option>Mumbai - Altamount</option>
+                                    <option>Mumbai - Bhiwandi</option>
+                                    <option>Mumbai - Lower Parel</option>
+                                    <option>Naroda</option>
                                 </select>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col form-group">
+                            <!--<div class="col form-group">
                                 <label>Billing Company*</label>
                                 <select id="inputState" class="form-control form-control-sm" required>
                                     <option selected>BMRO</option>
                                     <option>ONG</option>
                                 </select>
-                            </div>
+                            </div>-->
                             <div class="col form-group">
                                 <label>Shipping Company*</label>
                                 <select id="inputState" class="form-control form-control-sm" required>
@@ -590,11 +639,11 @@
                                         for="customFile">Choose file</label>
                                 </div>
                             </div>
-                            <div class="col form-group">
+                            <!--<div class="col form-group">
                                 <label>Subject*</label>
                                 <input type="text" class="form-control form-control-sm form-control form-control-sm-sm"
                                     id="exampleInputPassword1" placeholder="Lab test inquiry" required>
-                            </div>
+                            </div>-->
 
                         </div>
 
@@ -1335,7 +1384,7 @@
 <script>
     $('.addproinq').click(function () {
         //alert('adhuwer');
-        $('.appendhere').append('<div class="row"><div class="col form-group"><label>#</label><input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required></div><div class="col form-group"><label>Product</label><select id="inputState" class="form-control form-control-sm form-control form-control-sm-sm" required><option selected>BM9M9P0 - FAG Deep Groove Ball Bearing, Inside Dia 30 mm, Outside Dia 72 mm, Width 19 mm - 6306-ZZ</option><option>...</option></select></div><div class="col form-group"><label>Customer Material</label><input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required></div><div class="col form-group"><label>Customer Material Code</label><input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required></div><!--<div class="col form-group"><label>SAP Status</label><span class="badge badge-success text-uppercase">SYNCED</span></div>--><div class="col form-group"><label>Quantity</label><input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" placeholder="10" required></div><!--<div class="col form-group"><label>Inventory</label><span class="form-control form-control-sm">NO</span></div>--></div>')
+        $('.appendhere').append('<div class="card"> <div class="card-body"> <div class="row"> <!--<div class="col form-group"> <label>#</label> <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required> </div>--> <div class="col form-group"> <label>Product</label> <select id="inputState" class="form-control form-control-sm form-control form-control-sm-sm" required=""> <option selected="">BM9M9P0 - FAG Deep Groove Ball Bearing, Inside Dia 30 mm, Outside Dia 72 mm, Width 19 mm - 6306-ZZ</option> <option>...</option> </select> </div> <div class="col form-group"> <label>Unit Price*</label> <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Selling Price*</label> <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Unit Freight*</label> <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Total Freight*</label> <input type="text" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="50" required=""> </div> <div class="col form-group"> <label>Tax Rate*</label> <select id="inputState" class="form-control form-control-sm" required=""> <option selected="">12% GST</option> <option>...</option> </select> </div> <div class="col form-group"> <label>Tax Code*</label> <select id="inputState" class="form-control form-control-sm" required=""> <option selected="">#92379</option> <option>...</option> </select> </div> <div class="col form-group"> <label>Tax Code*</label> <select id="inputState" class="form-control form-control-sm" required=""> <option selected="">#92379</option> <option>...</option> </select> </div> <div class="col form-group"> <label>Measurement Unit*</label> <select id="inputState" class="form-control form-control-sm" required=""> <option selected="">EA</option> <option>...</option> </select> </div> <!--<div class="col form-group"> <label>Inventory</label> <span class="form-control form-control-sm">NO</span> </div>--> </div> <div class="row"> <div class="col form-group"> <label>Customer Material</label> <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required=""> </div> <div class="col form-group"> <label>Customer Material Code</label> <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" required=""> </div> <!--<div class="col form-group"> <label>SAP Status</label> <span class="form-control form-control-sm">YES</span> </div>--> <div class="col form-group"> <label>Quantity</label> <input type="text" class="form-control form-control-sm form-control form-control-sm-sm" id="exampleInputPassword1" placeholder="10" required=""> </div> <div class="col form-group onlysupppo"> <label>Supplier*</label> <select id="inputState" class="form-control form-control-sm" required=""> <option selected="">NEWI</option> <option>...</option> </select> </div> <!--<div class="col form-group showonpo"> <label>Lead Date</label><input class="form-control form-control-sm datepicker"></div>--> </div> </div> </div> </div>')
     }
     )
 </script>
